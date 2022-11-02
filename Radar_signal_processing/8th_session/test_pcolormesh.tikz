@@ -1,0 +1,67 @@
+% This file was created by matplotlib2tikz v0.6.18.
+\begin{tikzpicture}
+
+\begin{axis}[
+colorbar,
+colorbar style={ylabel={}},
+colormap/viridis,
+point meta max=23,
+point meta min=0,
+tick align=outside,
+tick pos=left,
+x grid style={white!69.01960784313725!black},
+xmajorgrids,
+xmin=-11.4126781955418, xmax=12,
+y grid style={white!69.01960784313725!black},
+ymajorgrids,
+ymin=-12, ymax=11.4126781955418
+]
+\addplot graphics [includegraphics cmd=\pgfimage,xmin=-11.4126781955418, xmax=12, ymin=-12, ymax=11.4126781955418] {python/test_pcolormesh-000.png};
+\addplot [semithick, black, mark=x, mark size=3, mark options={solid}, only marks, forget plot]
+table [row sep=\\]{%
+-4.89858719658941e-16	-4 \\
+-3.23606797749979	-2.35114100916989 \\
+-3.80422606518061	1.23606797749979 \\
+-1.23606797749979	3.80422606518061 \\
+2.35114100916989	3.23606797749979 \\
+4	2.44929359829471e-16 \\
+};
+\addplot [semithick, black, mark=x, mark size=3, mark options={solid}, only marks, forget plot]
+table [row sep=\\]{%
+-7.34788079488412e-16	-6 \\
+-4.85410196624968	-3.52671151375484 \\
+-5.70633909777092	1.85410196624968 \\
+-1.85410196624968	5.70633909777092 \\
+3.52671151375484	4.85410196624968 \\
+6	3.67394039744206e-16 \\
+};
+\addplot [semithick, black, mark=x, mark size=3, mark options={solid}, only marks, forget plot]
+table [row sep=\\]{%
+-9.79717439317883e-16	-8 \\
+-6.47213595499958	-4.70228201833978 \\
+-7.60845213036123	2.47213595499958 \\
+-2.47213595499958	7.60845213036123 \\
+4.70228201833979	6.47213595499958 \\
+8	4.89858719658941e-16 \\
+};
+\addplot [semithick, black, mark=x, mark size=3, mark options={solid}, only marks, forget plot]
+table [row sep=\\]{%
+-1.22464679914735e-15	-10 \\
+-8.09016994374947	-5.87785252292473 \\
+-9.51056516295153	3.09016994374947 \\
+-3.09016994374947	9.51056516295153 \\
+5.87785252292473	8.09016994374947 \\
+10	6.12323399573677e-16 \\
+};
+\addplot [semithick, black, mark=x, mark size=3, mark options={solid}, only marks, forget plot]
+table [row sep=\\]{%
+-1.46957615897682e-15	-12 \\
+-9.70820393249937	-7.05342302750968 \\
+-11.4126781955418	3.70820393249937 \\
+-3.70820393249937	11.4126781955418 \\
+7.05342302750968	9.70820393249937 \\
+12	7.34788079488412e-16 \\
+};
+\end{axis}
+
+\end{tikzpicture}

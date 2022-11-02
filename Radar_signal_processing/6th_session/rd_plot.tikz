@@ -1,0 +1,25 @@
+% This file was created by tikzplotlib v0.9.8.
+\begin{tikzpicture}
+
+\begin{axis}[
+colorbar,
+colorbar style={ylabel={Magnitude (dB)}},
+colormap/viridis,
+point meta max=0.0253588544644968,
+point meta min=0,
+tick align=outside,
+tick pos=left,
+title={Range/Doppler Map},
+x grid style={white!69.0196078431373!black},
+xlabel={Range\_rate or slow time index (m/s)},
+xmin=-0.5, xmax=63.5,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ylabel={Range or fast time index  (m)},
+ymin=-0.5, ymax=499.5,
+ytick style={color=black}
+]
+\addplot graphics [includegraphics cmd=\pgfimage,xmin=-0.5, xmax=63.5, ymin=-0.5, ymax=499.5] {python\rd_plot-000.png};
+\end{axis}
+
+\end{tikzpicture}

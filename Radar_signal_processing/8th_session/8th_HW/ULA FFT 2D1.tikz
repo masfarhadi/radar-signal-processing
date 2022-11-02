@@ -1,0 +1,44 @@
+% This file was created by tikzplotlib v0.8.5.
+\begin{tikzpicture}
+
+\begin{axis}[
+colorbar,
+colorbar style={ylabel={Magnitude (dB)}},
+colormap={mymap}{[1pt]
+  rgb(0pt)=(1,0.96078431372549,0.92156862745098);
+  rgb(1pt)=(0.996078431372549,0.901960784313726,0.807843137254902);
+  rgb(2pt)=(0.992156862745098,0.815686274509804,0.635294117647059);
+  rgb(3pt)=(0.992156862745098,0.682352941176471,0.419607843137255);
+  rgb(4pt)=(0.992156862745098,0.552941176470588,0.235294117647059);
+  rgb(5pt)=(0.945098039215686,0.411764705882353,0.0745098039215686);
+  rgb(6pt)=(0.850980392156863,0.282352941176471,0.00392156862745098);
+  rgb(7pt)=(0.650980392156863,0.211764705882353,0.0117647058823529);
+  rgb(8pt)=(0.498039215686275,0.152941176470588,0.0156862745098039)
+},
+point meta max=-100,
+point meta min=-180,
+tick align=outside,
+tick pos=both,
+title={ULA FFT 2D},
+x grid style={white!69.01960784313725!black},
+xlabel={angle  (radian)},
+xmin=-0.5, xmax=0.49609375,
+xtick style={color=black},
+y grid style={white!69.01960784313725!black},
+ylabel={Range (m)},
+ymin=0, ymax=90,
+ytick style={color=black}
+]
+\addplot graphics [includegraphics cmd=\pgfimage,xmin=-0.5, xmax=0.49609375, ymin=0, ymax=89.794921875] {ULA FFT 2D1-005.png};
+\addplot [semithick, black, mark=x, mark size=3, mark options={solid}, only marks]
+table {%
+-0.0261679781214719 0.001
+0.0435778713738291 0.1
+-0.286788218175523 15
+-0.257519037455027 15
+0 40
+0.0868240888334652 80
+};
+\end{axis}
+
+\end{tikzpicture}

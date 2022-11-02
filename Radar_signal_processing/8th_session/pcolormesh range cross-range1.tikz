@@ -1,0 +1,33 @@
+% This file was created by tikzplotlib v0.8.5.
+\begin{tikzpicture}
+
+\begin{axis}[
+colorbar,
+colorbar style={ylabel={Magnitude (dB)}},
+colormap/viridis,
+point meta max=-100,
+point meta min=-180,
+tick align=outside,
+tick pos=both,
+x grid style={white!69.01960784313725!black},
+xlabel={Cross-range (m)},
+xmin=-89.794921875, xmax=89.794921875,
+xtick style={color=black},
+y grid style={white!69.01960784313725!black},
+ylabel={Range (m)},
+ymin=0, ymax=89.7942314077404,
+ytick style={color=black}
+]
+\addplot graphics [includegraphics cmd=\pgfimage,xmin=-89.794921875, xmax=89.794921875, ymin=0, ymax=89.7942314077404] {pcolormesh range cross-range1-003.png};
+\addplot [semithick, red, mark=x, mark size=3, mark options={solid}, only marks]
+table {%
+-5.23359562429438e-05 0.000998629534754574
+0.00871557427476582 0.0996194698091746
+-8.60364654526569 12.2872806643349
+-7.72557112365081 12.8575095105317
+0 40
+13.8918542133544 78.7846202409766
+};
+\end{axis}
+
+\end{tikzpicture}
